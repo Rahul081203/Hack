@@ -83,62 +83,62 @@ def index():
         swollen_extremeties	
         excessive_hunger	
         extra_marital_contacts	
-        drying_and_tingling_lips	
-        slurred_speech	
-        knee_pain	
-        hip_joint_pain	
-        muscle_weakness	
-        stiff_neck	
-        swelling_joints	
-        movement_stiffness	
-        spinning_movements	
-        loss_of_balance	
-        unsteadiness	
-        weakness_of_one_body_side	
-        loss_of_smell	
-        bladder_discomfort	
-        foul_smell_of urine	
-        continuous_feel_of_urine	
-        passage_of_gases	
-        internal_itching	
-        toxic_look_(typhos)	
-        depression	
-        irritability	
-        muscle_pain	
-        altered_sensorium	
-        red_spots_over_body	
-        belly_pain	
-        abnormal_menstruation	
-        dischromic _patches	
-        watering_from_eyes	
-        increased_appetite	
-        polyuria	
-        family_history	
-        mucoid_sputum	
-        rusty_sputum	
-        lack_of_concentration	
-        visual_disturbances	
-        receiving_blood_transfusion	
-        receiving_unsterile_injections	
-        coma	
-        stomach_bleeding	
-        distention_of_abdomen	
-        history_of_alcohol_consumption	
-        fluid_overload	
-        blood_in_sputum	
-        prominent_veins_on_calf	
-        palpitations	
-        painful_walking	
-        pus_filled_pimples	
-        blackheads	
-        scurring	
-        skin_peeling	
-        silver_like_dusting	
-        small_dents_in_nails	
-        inflammatory_nails	
-        blister	
-        red_sore_around_nose	
-        yellow_crust_ooze	
+ 'Drying And Tingling Lips',	
+        'Slurred Speech',
+        'Knee Pain',	
+        'Hip Joint Pain',	
+        'Muscle Weakness',	
+        'Stiff Neck',
+        'Swelling Joints',	
+        'Movement Stiffness',	
+        'Spinning Movements',	
+        'Loss Of Balance',	
+        'Unsteadiness',	
+        'Weakness Of One Body Side',	
+        'Loss Of Smell',
+        'Bladder Discomfort',	
+        'Foul Smell Of Urine',	
+        'Continuous Feel Of Urine',	
+        'Passage Of Gases',	
+        'Internal Itching',	
+        'Toxic Look (Typhos)',	
+        'Depression',
+        'Irritability',	
+        'Muscle Pain',	
+        'Altered Sensorium',	
+        'Red Spots Over Body',	
+        'Belly Pain',
+        'Abnormal Menstruation',	
+        'Dischromic  Patches',	
+        'Watering From Eyes',
+        'Increased Appetite',
+        'Polyuria',	
+        'Family History',	
+        'Mucoid Sputum',	
+        'Rusty Sputum',	
+        'Lack Of Concentration',	
+        'Visual Disturbances',	
+        'Receiving Blood Transfusion',	
+        'Receiving Unsterile Injections',	
+        'Coma',	
+        'Stomach Bleeding',	
+        'Distention Of Abdomen',	
+        'History Of Alcohol Consumption',	
+        'Fluid Overload',
+        'Blood In Sputum',	
+        'Prominent Veins On Calf',	
+        'Palpitations',	
+        'Painful Walking',	
+        'Pus Filled Pimples',	
+        'Blackheads',	
+        'Scurring',	
+        'Skin Peeling',	
+        'Silver Like Dusting',	
+        'Small Dents In Nails',
+        'Inflammatory Nails',
+        'Blister',	
+        'Red Sore Around Nose',	
+        'Yellow Crust Ooze',	
 
 
 
