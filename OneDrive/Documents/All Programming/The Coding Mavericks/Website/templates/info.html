@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Disease Information</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/cheerio@1.0.0-rc.10/dist/cheerio.min.js"></script>
+</head>
+<body>
+	<h1>Disease Information</h1>
+	<form>
+		<label for="disease">Enter a disease:</label><br>
+		<input type="text" id="disease" name="disease"><br><br>
+		<button type="button" onclick="getDiseaseInfo()">Get Information</button>
+	</form>
+	<br>
+	<div id="diseaseInfo"></div>
+
+	<script>
+		function getDiseaseInfo() {
+			// Get the disease input value
+			var disease = document.getElementById("${{disease}}").value;
+
+			// Search for the disease on Google and get the search results page
+			var xhr = new XMLHttpRequest();
+			xhr.open("GET", "https://www.google.com/search?q=" + disease, true);
+			xhr.onload = function() {
+				if (xhr.status == 200) {
+					// If the request is successful, extract the disease information from the search results page
+					var searchResults = xhr.responseText;
+					var $ = cheerio.load(searchResults);
+					var diseaseSummary = $("div.kno-rdesc span:nth-child(1)").text();
+
+					// Display the disease summary
+					document.getElementById("diseaseInfo").innerHTML = diseaseSummary;
+				} else {
+					// If the request is not successful, display an error message
+					document.getElementById("diseaseInfo").innerHTML = "Error: " + xhr.statusText;
+				}
+			};
+			xhr.send();
+		}
+	</script>
+</body>
+</html>

@@ -1,7 +1,24 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Disease Information</title>
+</head>
+<body>
+	<h1>Disease Information</h1>
+	<form>
+		<label for="disease">Enter a disease:</label><br>
+		<input type="text" id="disease" name="disease" value="{{data}}"><br><br>
+		<button type="button" onclick="searchGoogle()">Get Information on Google</button>
+	</form>
 
-{% block title %}Prediction{% endblock %}
+	<script>
+		function searchGoogle() {
+			// Get the disease input value
+			var disease = document.getElementById("disease").value;
 
-{% block body %}
-Prediction is: ${{data}}
-{% endblock %}
+			// Redirect the user to a Google search page for the disease name
+			window.location.href = "https://www.google.com/search?q=" + disease;
+		}
+	</script>
+</body>
+</html>
