@@ -2,19 +2,25 @@
 <html>
 <head>
 	<title>Disease Information</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}" type="text/css">
 </head>
 <body>
-	<h1>Disease Information</h1>
-    <div class="back">
-        
-    </div>
-	<form>
-		<label for="disease">Enter a disease:</label><br>
-		<input type="text" id="disease" name="disease" value="{{data}}"><br><br>
-		<button type="button" onclick="searchGoogle()">Get Information on Google</button>
-	</form>
-
+    <div class="hero">
+        <div class="heading">
+            <font color="#17015A" face="fantasy">
+                <h1 align="center">V i r t u a  l</font><font color="red">      Doctor</h1>
+            </font>
+<br>
+<h3 align="center">Possible Disease</h3>
+</div>
+<br>
+<center>
+    <form action="/predict" method="post">
+    <input type="text" id="disease" name="disease" value="{{data}}" class="result"><br><br><br><br>
+        <b><button type="button" value="Learn More" onclick="searchGoogle()" class="submit-button">Learn More</button></b>
+    </form>
+</center>
+</div>
 
 	<script>
 		function searchGoogle() {

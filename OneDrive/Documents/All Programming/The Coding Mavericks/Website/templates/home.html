@@ -1,10 +1,24 @@
-{% extends "layout.html" %}
-{% block title %}VirDoc{% endblock %}
-{% block body %}
-<h1 align="center">Virtual Doctor (Symptom Checker)</h1>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}" type="text/css">
+        <title>VirDoc</title>
+    </head>
+    <body>
+        <div class="hero">
+            <div class="heading">
+        <font color="#17015A" face="fantasy">
+        <h1 align="center">V i r t u a  l</font><font color="red">      Doctor</h1>
+    </font>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+    <center>
+        <form action="/predict" method="post">
+        <input type="text" id="symptoms" name="symptoms" placeholder="Enter symptoms: " class="search"><br><br><br><br>
+            <b><input type="submit" value="PREDICT" class="submit-button"></b>
+        </form>
+    </center>
+    </div>
 
-<form action="/predict" method="post">
-    <input type="text" id="symptoms" name="symptoms" placeholder="Enter symptoms: ">
-    <input type="submit" value="predict">
-</form>
-{% endblock %}
+</body>
+</html>
