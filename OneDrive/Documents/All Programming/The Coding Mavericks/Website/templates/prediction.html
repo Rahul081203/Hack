@@ -2,14 +2,19 @@
 <html>
 <head>
 	<title>Disease Information</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<h1>Disease Information</h1>
+    <div class="back">
+        
+    </div>
 	<form>
 		<label for="disease">Enter a disease:</label><br>
 		<input type="text" id="disease" name="disease" value="{{data}}"><br><br>
 		<button type="button" onclick="searchGoogle()">Get Information on Google</button>
 	</form>
+
 
 	<script>
 		function searchGoogle() {
