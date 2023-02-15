@@ -1,0 +1,26 @@
+.hero{
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    align-self: center;
+}
+
+.navbar{
+    width: 85%;
+    height: 15%;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    color: white;
+    padding: 10px 30px;
+    background-color: red;
+    font-size: larger;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    font-family: Roboto;
+}

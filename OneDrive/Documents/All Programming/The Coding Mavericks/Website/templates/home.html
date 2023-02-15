@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block title %}VirDoc{% endblock %}
+{% block body %}
+<h1 align="center">Virtual Doctor (Symptom Checker)</h1>
+<form action="/predict" method="post">
+    <input type="text" id="symptoms" name="symptoms" placeholder="Enter symptoms: ">
+    <input type="submit" value="predict">
+</form>
+{% endblock %}
