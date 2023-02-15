@@ -7,86 +7,87 @@ model=pickle.load(open('model.pkl','rb'))
 
 @app.route('/')
 def index():
-    symptom-list = [
-        'itching'	
-        skin_rash
-        nodal_skin_eruptions	
-        continuous_sneezing	
-        shivering	
-        chills	
-        joint_pain	
-        stomach_pain	
-        acidity	ulcers_on_tongue	
-        muscle_wasting	
-        vomiting	
-        burning_micturition	
-        spotting_ urination	
-        fatigue	
-        weight_gain	
-        anxiety	
-        cold_hands_and_feets	
-        mood_swings	
-        weight_loss	
-        restlessness	
-        lethargy	
-        patches_in_throat	
-        irregular_sugar_level	
-        cough	
-        high_fever	
-        sunken_eyes	
-        breathlessness	
-        sweating	
-        dehydration	
-        indigestion	
-        headache	
-        yellowish_skin	
-        dark_urine	
-        nausea	
-        loss_of_appetite	
-        pain_behind_the_eyes	
-        back_pain	
-        constipation	
-        abdominal_pain	
-        diarrhoea	
-        mild_fever	
-        yellow_urine	
-        yellowing_of_eyes	
-        acute_liver_failure	
-        fluid_overload	
-        swelling_of_stomach	
-        swelled_lymph_nodes	
-        malaise	
-        blurred_and_distorted_vision	
-        phlegm	
-        throat_irritation	
-        redness_of_eyes	
-        sinus_pressure	
-        runny_nose	
-        congestion	
-        chest_pain	
-        weakness_in_limbs	
-        fast_heart_rate	
-        pain_during_bowel_movements	
-        pain_in_anal_region	
-        bloody_stool	
-        irritation_in_anus	
-        neck_pain	
-        dizziness	
-        cramps	
-        bruising	
-        obesity	
-        swollen_legs	
-        swollen_blood_vessels	
-        puffy_face_and_eyes	
-        enlarged_thyroid	
-        brittle_nails	
-        swollen_extremeties	
-        excessive_hunger	
-        extra_marital_contacts	
- 'Drying And Tingling Lips',	
-        'Slurred Speech',
+    symptom_list = [
+        'Itching',	
+        'Skin Rash',
+        'Nodal Skin Eruptions',	
+        'Continuous Sneezing',	
+        'Shivering',	
+        'Chills',	
+        'Joint Pain',	
+        'Stomach Pain',	
+        'Acidity',	
+        'Ulcers On Tongue',	
+        'Muscle Wasting',	
+        'Vomiting',	
+        'Burning Micturition',	
+        'Spotting Urination',	
+        'Fatigue',	
+        'Weight Gain',	
+        'Anxiety',	
+        'Cold Hands And Feets',	
+        'Mood Swings',	
+        'Weight Loss',	
+        'Restlessness',	
+        'Lethargy',	
+        'Patches In Throat',	
+        'Irregular Sugar Level',	
+        'Cough',	
+        'High Fever',
+        'Sunken Eyes',	
+        'Breathlessness',	
+        'Sweating',	
+        'Dehydration',	
+        'Indigestion',	
+        'Headache',	
+        'Yellowish Skin',	
+        'Dark Urine',	
+        'Nausea',	
+        'Loss Of Appetite',	
+        'Pain Behind The Eyes',	
+        'Back Pain',	
+        'Constipation',	
+        'Abdominal Pain',	
+        'Diarrhoea',	
+        'Mild Fever',	
+        'Yellow Urine',	
+        'Yellowing Of Eyes',	
+        'Acute Liver Failure',	
+        'Fluid Overload',	
+        'Swelling Of Stomach',	
+        'Swelled Lymph Nodes',	
+        'Malaise',	
+        'Blurred And Distorted Vision',	
+        'Phlegm',	
+        'Throat Irritation',	
+        'Redness Of Eyes',	
+        'Sinus Pressure',	
+        'Runny Nose',	
+        'Congestion',	
+        'Chest Pain',	
+        'Weakness In Limbs',	
+        'Fast Heart Rate',	
+        'Pain During Bowel Movements',	
+        'Pain In Anal Region',
+        'Bloody Stool',	
+        'Irritation In Anus',	
+        'Neck Pain',	
+        'Dizziness',	
+        'Cramps',	
+        'Bruising',	
+        'Obesity',	
+        'Swollen Legs',	
+        'Swollen Blood Vessels',	
+        'Puffy Face And Eyes',	
+        'Enlarged Thyroid',	
+        'Brittle Nails',	
+        'Swollen Extremeties',	
+        'Excessive Hunger',	
+        'Extra Marital Contacts',	
+        'Drying And Tingling Lips',	
+        'Slurred Speech',	
         'Knee Pain',	
-        'Hip Joint Pain',	
+        'Hip Joint Pain',
         'Muscle Weakness',	
         'Stiff Neck',
         'Swelling Joints',	
@@ -138,18 +139,10 @@ def index():
         'Inflammatory Nails',
         'Blister',	
         'Red Sore Around Nose',	
-        'Yellow Crust Ooze',	
-
-
-
-
-
-
-
-
+        'Yellow Crust Ooze'
     ]
 
-    return render_template('home.html, data=symptom-list')
+    return render_template('home.html, data=symptom_list')
 
 @app.route('/predict',methods=['GET','POST'])
 def predict():
@@ -160,4 +153,4 @@ def predict():
 
 
 if __name__=="__main__":
-    app.run()
+    app.run()	
