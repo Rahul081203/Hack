@@ -7,7 +7,7 @@ model=pickle.load(open('model.pkl','rb'))
 
 @app.route('/')
 def index():
-    symptom-list = [
+    symptom_list = [
         'itching'	
         skin_rash
         nodal_skin_eruptions	
@@ -138,14 +138,7 @@ def index():
         inflammatory_nails	
         blister	
         red_sore_around_nose	
-        yellow_crust_ooze	
-
-
-
-
-
-
-
+        yellow_crust_ooze
 
     ]
 
